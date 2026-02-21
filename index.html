@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <body class="bg-light">
+
+  <!-- Center the calculator -->
+  <div class="container d-flex justify-content-center align-items-center vh-100 flex-column">
+    <div class="card shadow-lg rounded-4 p-4 text-dark w-100" style="max-width: 400px;">
+
+      <!-- Header -->
+      <h1 class="text-center fw-bold fs-2 mb-3">Calculator</h1>
+
+      <!-- Display -->
+      <input type="text" id="display" class="form-control form-control-lg text-end fw-bold shadow-sm mb-4 rounded-3" disabled>
+
+      <!-- Row 1: Clear, Delete, Divide, Multiply -->
+      <div class="row g-3 mb-3">
+        <button class="col btn btn-danger btn-lg rounded-3 mb-2 me-2" id="clear">C</button>
+        <button class="col btn btn-secondary btn-lg rounded-3 mb-2 me-2" id="delete">⌫</button>
+        <button class="col btn btn-warning btn-lg rounded-3 mb-2 me-2" data-operator="/">÷</button>
+        <button class="col btn btn-warning btn-lg rounded-3 mb-2 me-2" data-operator="*">×</button>
+      </div>
+
+      <!-- Row 2: 7,8,9, Minus -->
+      <div class="row g-3 mb-3">
+        <button class="col btn btn-light btn-lg rounded-3 mb-2 me-2" data-number="7">7</button>
+        <button class="col btn btn-light btn-lg rounded-3 mb-2 me-2" data-number="8">8</button>
+        <button class="col btn btn-light btn-lg rounded-3 mb-2 me-2" data-number="9">9</button>
+        <button class="col btn btn-warning btn-lg rounded-3 mb-2 me-2" data-operator="-">−</button>
+      </div>
+
+      <!-- Row 3: 4,5,6, Plus -->
+      <div class="row g-3 mb-3">
+        <button class="col btn btn-light btn-lg rounded-3 mb-2 me-2" data-number="4">4</button>
+        <button class="col btn btn-light btn-lg rounded-3 mb-2 me-2" data-number="5">5</button>
+        <button class="col btn btn-light btn-lg rounded-3 mb-2 me-2" data-number="6">6</button>
+        <button class="col btn btn-warning btn-lg rounded-3 mb-2 me-2" data-operator="+">+</button>
+      </div>
+
+      <!-- Row 4: 1,2,3, Equals -->
+      <div class="row g-3 mb-3">
+        <button class="col btn btn-light btn-lg rounded-3 mb-2 me-2" data-number="1">1</button>
+        <button class="col btn btn-light btn-lg rounded-3 mb-2 me-2" data-number="2">2</button>
+        <button class="col btn btn-light btn-lg rounded-3 mb-2 me-2" data-number="3">3</button>
+        <button class="col btn btn-success btn-lg rounded-3 mb-2 me-2" id="equals">=</button>
+      </div>
+
+      <!-- Row 5: 0, Decimal -->
+      <div class="row g-3">
+        <button class="col-6 btn btn-light btn-lg rounded-3 mb-2 me-2" data-number="0">0</button>
+        <button class="col-3 btn btn-light btn-lg rounded-3 mb-2 me-2" data-number=".">.</button>
+      </div>
+
+    </div>
+  </div>
+
+<script src="calculator.js"></script>
+    
+</body>
+</html>
